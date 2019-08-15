@@ -27,15 +27,21 @@ public class SolutionTest {
     @Parameterized.Parameters
     public static Collection parameters() {
         return Arrays.asList(new Object[][]{
-//                {"hit", "cog",  Arrays.asList("hot","dot","dog","lot","log","cog"),
-//                Arrays.asList(Arrays.asList("hit","hot","lot","log","cog"),
-//                        Arrays.asList("hit","hot","dot","dog","cog"))},
-//                {"hit", "cog", Arrays.asList("hot","dot","dog","lot","log"),
-//                        Collections.EMPTY_LIST},
+                {"hit", "cog",  Arrays.asList("hot","dot","dog","lot","log","cog"),
+                Arrays.asList(Arrays.asList("hit","hot","dot","dog","cog"),
+                        Arrays.asList("hit","hot","lot","log","cog"))},
+                {"hit", "cog", Arrays.asList("hot","dot","dog","lot","log"),
+                        Collections.EMPTY_LIST},
                 {"red", "tax", Arrays.asList("ted","tex","red","tax","tad","den","rex","pee"),
-                Arrays.asList(Arrays.asList("red","ted","tad","tax"),
-                        Arrays.asList("red","ted","tex","tax"),
-                        Arrays.asList("red","rex","tex","tax"))}
+                Arrays.asList(Arrays.asList("red","ted","tex","tax"),
+                        Arrays.asList("red","rex","tex","tax"),
+                        Arrays.asList("red","ted","tad","tax"))},
+                {"a", "c", Arrays.asList("a","b","c"),
+                        Arrays.asList(Arrays.asList("a", "c"))},
+                {"hot", "dot", Arrays.asList("hot", "dot", "dog"),
+                        Arrays.asList(Arrays.asList("hot", "dot"))},
+                {"hot", "dog", Arrays.asList("hot", "dot", "dog", "cog", "pot"),
+                        Arrays.asList(Arrays.asList("hot", "dot", "dog"))}
         });
     }
 
